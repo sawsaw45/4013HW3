@@ -25,16 +25,12 @@
                     </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="workouts.php">Workouts</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="exercises.php">Exercises</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="get-result.php">Get Result</a>
+                        <a class="nav-link" href="workouts.php">Workouts</a>
                     </li>
                 </ul>
-
             </div>
         </div>
     </nav>
