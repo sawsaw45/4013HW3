@@ -1,5 +1,5 @@
 <?php
-function selectAccountsByOwner() {
+function SelectUsers() {
 try {
 $conn = get_db_connection();
 $stmt = $conn->prepare("SELECT UserID, Username FROM Users; ");
