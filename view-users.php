@@ -12,11 +12,11 @@
         while($user = $users->fetch_assoc()) {
             ?>
         <tr>
-        <td><?php echo $user['userid']; ?></td>
-        <td><?php echo $user['username']; ?></td>
+        <td><?php echo $user['UserID']; ?></td>
+        <td><?php echo $user['Username']; ?></td>
         <td>
          <form method="post" action="workouts-by-user.php">
-        <input type="hidden" name="cid" value="<?php echo $user['userid']; ?>">
+        <input type="hidden" name="cid" value="<?php echo $user['UserID']; ?>">
         <button type="submit" class="btn btn-primary">Sections</button>
       </form>
     </td>

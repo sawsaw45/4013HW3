@@ -2,7 +2,7 @@
 function selectUsers() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT Userid, Username FROM `Users`");
+        $stmt = $conn->prepare("SELECT UserID, Username FROM `Users`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
