@@ -16,7 +16,7 @@
         <td><?php echo $user['username']; ?></td>
         <td>
          <form method="post" action="sections-by-course.php">
-        <input type="hidden" name="cid" value="<?php echo $course['course_id']; ?>">
+        <input type="hidden" name="cid" value="<?php echo $user['userid']; ?>">
         <button type="submit" class="btn btn-primary">Sections</button>
       </form>
     </td>
