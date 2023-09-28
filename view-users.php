@@ -9,13 +9,24 @@
     </thead>
     <tbody>
     <?php
-    foreach ($user = $users->fetch_assoc()) {
-        echo "<tr>";
-        echo "<td>" . $user["UserID"] . "</td>";
-        echo "<td>" . $user["Username"] . "</td>";
-        echo "</tr>";
-    }
-    ?>
+        while($user = $users->fetch_assoc()) {
+            ?>
+        <tr>
+        <td><?php echo $user['userid']; ?></td>
+        <td><?php echo $user['username']; ?></td>
+        <td>
+         <form method="post" action="sections-by-course.php">
+        <input type="hidden" name="cid" value="<?php echo $course['course_id']; ?>">
+        <button type="submit" class="btn btn-primary">Sections</button>
+      </form>
+    </td>
+  </tr>
+<?php
+}
+?>
+    </tbody>
+
+
 
     </table>
 </div>
