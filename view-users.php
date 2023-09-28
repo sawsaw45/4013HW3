@@ -1,3 +1,4 @@
+<div class="container">
 <h1>Users</h1>
 <div class="table-responsive">
     <table class="table">
@@ -25,8 +26,6 @@
 }
 ?>
     </tbody>
-
-
-
     </table>
 </div>
+    </div>
