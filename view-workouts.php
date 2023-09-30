@@ -16,7 +16,7 @@
             while($workout = $workouts->fetch_assoc()) {
                 ?>
                 <tr>
-                    <td><?php echo $workout['u.username']; ?></td>
+                    <td><?php echo $workout['username']; ?></td>
                     <td><?php echo $workout['workoutname']; ?></td>
                     <td><?php echo $workout['date']; ?></td>
                     <td><?php echo $workout['Duration']; ?></td>
