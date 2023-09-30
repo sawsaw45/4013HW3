@@ -18,7 +18,7 @@
         <td>
          <form method="post" action="workouts-by-user.php">
         <input type="hidden" name="cid" value="<?php echo $user['UserID']; ?>">
-        <button type="submit" class="btn btn-primary">Sections</button>
+        <button type="submit" class="btn btn-primary">Workouts</button>
       </form>
     </td>
   </tr>
