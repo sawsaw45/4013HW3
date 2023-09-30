@@ -1,9 +1,9 @@
 <div class="container">
-    <h1>Users</h1>
+    <h1>Workouts</h1>
     <div class="table-responsive">
         <table class="table">
             <thead>
-            <tr>
+            <tr class="border border-danger rounded">
                 <th>Username</th>
                 <th>Workout</th>
                 <th>Date</th>
