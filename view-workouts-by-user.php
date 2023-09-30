@@ -1,5 +1,5 @@
 <div class="container">
-    <h1><?php echo $workout['username']?></h1>
+    <h1><?php echo $workouts->fetch_assoc()['username']?></h1>
     <div class="table-responsive">
         <table class="table">
             <thead class="border border-danger rounded">
