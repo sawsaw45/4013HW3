@@ -2,8 +2,8 @@
     <h1>Workouts</h1>
     <div class="table-responsive">
         <table class="table">
-            <thead>
-            <tr class="border border-danger rounded">
+            <thead class="border border-danger rounded">
+            <tr>
                 <th>Username</th>
                 <th>Workout</th>
                 <th>Date</th>
@@ -15,7 +15,7 @@
             <?php
             while($workout = $workouts->fetch_assoc()) {
                 ?>
-                <tr>
+                <tr class="border border-dark">
                     <td><?php echo $workout['username']; ?></td>
                     <td><?php echo $workout['workoutname']; ?></td>
                     <td><?php echo $workout['date']; ?></td>
