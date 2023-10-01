@@ -2,7 +2,7 @@
 <h1>Users</h1>
 <div class="table-responsive">
     <table class="table">
-    <thead>
+    <thead class="border border-danger">
           <tr>
               <th>UserID</th>
               <th>Username</th>
@@ -12,7 +12,7 @@
     <?php
         while($user = $users->fetch_assoc()) {
             ?>
-        <tr>
+        <tr class="border border-dark">
         <td><?php echo $user['UserID']; ?></td>
         <td><?php echo $user['Username']; ?></td>
         <td>
