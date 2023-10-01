@@ -1,10 +1,8 @@
 <?php
-function selectDetailsByWorkout($wid) {
+function selectExercises() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("");
-
-        $stmt->bind_param("i", $wid);
+        $stmt = $conn->prepare("Select exercisename, description, musclegroup, equipmentrequired from Exercises; ");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
