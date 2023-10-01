@@ -20,6 +20,12 @@
                     <td><?php echo $workout['date']; ?></td>
                     <td><?php echo $workout['Duration']; ?></td>
                     <td><?php echo $workout['CaloriesBurned']; ?></td>
+                    <td>
+                        <form method="post" action="details-by-workout.php?id=<?php echo $workout['workoutid'];?>">
+                            <input type="hidden" name="cid" value="<?php echo $workout['workoutid']; ?>">
+                            <button type="submit" class="btn btn-primary">Workout Details</button>
+                        </form>
+                    </td>
                 </tr>
                 <?php
             }
