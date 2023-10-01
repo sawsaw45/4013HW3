@@ -28,7 +28,7 @@
                         <a class="nav-link" href="exercises.php">Exercises</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="workouts.php">Workouts</a>
+                        <a class="nav-link" href="workouts.php">All Workouts</a>
                     </li>
                 </ul>
             </div>

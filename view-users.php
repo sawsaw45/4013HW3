@@ -1,7 +1,7 @@
 <div class="container">
 <h1>Users</h1>
 <div class="table-responsive">
-    <table class="table">
+    <table class="table ">
     <thead class="border border-danger">
           <tr>
               <th>UserID</th>
