@@ -16,7 +16,16 @@
 
                 <tr class="border border-dark">
                     <td><?php echo $workout['sets']; ?></td>
-                    <td><?php echo $workout['repetitions']; ?></td>
+                    <td><?php
+                            $rep = $workout['repetitions'];
+                            if (isset($rep))
+                        {
+                            echo $rep;
+                        }
+                        else
+                        {
+                            echo "N/A";
+                        } ?></td>
                     <td><?php echo $workout['weight']; ?></td>
                     <td><?php echo $workout['duration']; ?></td>
                 </tr>
