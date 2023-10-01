@@ -1,5 +1,5 @@
 <div class="container">
-    <?php while($workout = $workouts->fetch_assoc()) ?>
+    <?php while($workout = $workouts->fetch_assoc()) { ?>
     <h1><?php echo $workout['username']?> <?php echo $workout['workoutname']?> </h1>
 <?php } ?>
     <div class="table-responsive">
@@ -13,7 +13,7 @@
             </tr>
             </thead>
             <tbody>
-<?php while($workout = $workouts->fetch_assoc()) ?>
+<?php while($workout = $workouts->fetch_assoc()) { ?>
                 <tr class="border border-dark">
                     <td><?php echo $workout['sets']; ?></td>
                     <td><?php echo $workout['repetitions']; ?></td>
