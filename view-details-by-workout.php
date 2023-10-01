@@ -18,7 +18,7 @@
                     <td><?php echo $workout['sets']; ?></td>
                     <td><?php
                             $rep = $workout['repetitions'];
-                            if (isset($rep) or empty($rep))
+                            if (isset($rep) or $rep == '')
                         {
                             echo $rep;
                         }
