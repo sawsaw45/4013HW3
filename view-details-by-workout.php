@@ -26,7 +26,16 @@
                         {
                             echo "N/A";
                         } ?></td>
-                    <td><?php echo $workout['weight']; ?></td>
+                    <td><?php
+                        $weigh = $workout['weight'];
+                        if (isset($weigh) or $weigh != '')
+                        {
+                            echo $weigh
+                        }
+                        else
+                        {
+                            echo "N/A";
+                        } ?></td>
                     <td><?php echo $workout['duration']; ?></td>
                 </tr>
                 <?php
