@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>Workouts by User
+    <h1>Exercises
     </h1>
     <div class="table-responsive">
         <table class="table">
