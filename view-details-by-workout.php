@@ -27,10 +27,10 @@
                             echo "N/A";
                         } ?></td>
                     <td><?php
-                        $weigh = $workout['weight'];
+                        $weigh = number_format($workout['weight']);
                         if (isset($weigh) or $weigh != '')
                         {
-                            echo number_format($weigh);
+                            echo $weigh;
                         }
                         else
                         {
