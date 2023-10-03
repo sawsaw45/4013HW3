@@ -30,7 +30,7 @@
                         $weigh = $workout['weight'];
                         if (isset($weigh) or $weigh != '')
                         {
-                            echo $weigh;
+                            echo number_format($weigh, 0, '.', ',');
                         }
                         else
                         {
