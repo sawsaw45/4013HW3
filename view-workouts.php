@@ -1,6 +1,6 @@
 <div class="container">
     <h1>Workouts</h1>
-    <div class="card-group" style="display: inline-block" >
+    <div class="card-group" style="display: flex;" >
         <?php while($workout = $workouts->fetch_assoc()) { ?>
         <div class="card">
                 <?php $workoutDeets = selectWorkoutDeets($workout['workoutid']);
