@@ -21,9 +21,9 @@
                         echo number_format($workoutDeet['weight']);
                     }
                     ?></p>
+                 <?php } ?>
 
             </div>
         </div>
-                 <?php } ?>
 <?php }?>
     </div>
