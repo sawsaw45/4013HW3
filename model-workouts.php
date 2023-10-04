@@ -1,5 +1,6 @@
 <?php
-function selectWorkouts() {
+function selectWorkouts()
+{
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT username, workoutname, date, Duration ,CaloriesBurned FROM Workouts w join Users u on w.UserID = u.UserID; ");
@@ -11,6 +12,7 @@ function selectWorkouts() {
         $conn->close();
         throw $e;
     }
+}
     function selectWorkoutDeets() {
         try {
             $conn = get_db_connection();
