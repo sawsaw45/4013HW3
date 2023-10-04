@@ -1,19 +1,16 @@
 
     <h1>Workouts</h1>
-    <div class="row row-cols-1 row-cols-md-3 g-4" >
+    <div class="card-group" >
         <?php while($workout = $workouts->fetch_assoc()) { ?>
-        <div class="col">
-            <div class="card" style="width: 18rem; max-width: 284.6px;">
-                <div class="card-body">
-                    <h5 class="card-title"><?php echo $workout['username']?> <?php echo $workout['workoutname']?></h5>
-                    <h6 class="card-subtitle mb-2 text-muted"><?php echo $workout['date'] ?></h6>
-                    <?php $workoutDeets = selectWorkoutDeets($workout['workoutid']);
-                    while($workoutDeet = $workoutDeets->fetch_assoc()) { ?>
-                        <p class="card-text">Reps:<?php echo $workoutDeet['repetitions']?>, Sets: <?php echo $workoutDeet['sets']?>, Weight: <?php echo number_format($workoutDeet['weight'])?></p>
-                    <?php }?>
-                </div>
+        <div class="card" style="width: 18rem; max-width: 284.6px;">
+            <div class="card-body">
+                 <h5 class="card-title"><?php echo $workout['username']?> <?php echo $workout['workoutname']?></h5>
+                <h6 class="card-subtitle mb-2 text-muted"><?php echo $workout['date'] ?></h6>
+                <?php $workoutDeets = selectWorkoutDeets($workout['workoutid']);
+                 while($workoutDeet = $workoutDeets->fetch_assoc()) { ?>
+                <p class="card-text">Reps:<?php echo $workoutDeet['repetitions']?>, Sets: <?php echo $workoutDeet['sets']?>, Weight: <?php echo number_format($workoutDeet['weight'])?></p>
+            <?php }?>
             </div>
         </div>
-
     </div>
 <?php }?>
