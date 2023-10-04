@@ -1,6 +1,6 @@
 <div class="container">
     <h1>Workouts</h1>
-    <div class="row row-cols-1 row-cols-sm-5 g-4" >
+    <div class="row row-cols-3 row-cols-sm-5 g-4" >
         <div class="col">
             <?php while($workout = $workouts->fetch_assoc()) { ?>
             <div class="card">
