@@ -19,7 +19,6 @@
                     <td><?php echo $workout['username']; ?></td>
                     <td><?php echo $workout['workoutname']; ?></td>
                     <td><?php echo $workout['date']; ?></td>
-                    <td><?php echo $workout['Duration']; ?> min</td>
                     <td><?php echo $workout['CaloriesBurned']; ?></td>
                 </tr>
                 <?php

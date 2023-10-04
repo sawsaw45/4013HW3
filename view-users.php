@@ -17,7 +17,7 @@
         <td><?php echo $user['UserID']; ?></td>
         <td><?php echo $user['Username']; ?></td>
         <td>
-         <form method="post" action="workouts-by-user.php?id=<?php echo $user['UserID'];?>">
+         <form method="post" action="workouts-by-user.php">
         <input type="hidden" name="cid" value="<?php echo $user['UserID']; ?>">
         <button type="submit" class="btn btn-primary">Workouts</button>
       </form>
