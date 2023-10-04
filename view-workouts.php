@@ -5,6 +5,7 @@
         <?php while($workout = $workouts->fetch_assoc()) { ?>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     <div class="container-fluid" >
         <?php while($workout = $workouts->fetch_assoc()) { ?>
@@ -31,6 +32,8 @@
 <?php } ?>
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of c449aaa (mega test 1)
 =======
 >>>>>>> parent of c449aaa (mega test 1)
             <div class="col-sm-4">
