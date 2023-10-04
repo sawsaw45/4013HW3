@@ -1,6 +1,6 @@
 
     <h1>Workouts</h1>
-    <div class="card-group" >
+    <div class="b-card-group" >
         <?php while($workout = $workouts->fetch_assoc()) { ?>
         <div class="card" style="width: 18rem; max-width: 284.6px;">
             <div class="card-body">
