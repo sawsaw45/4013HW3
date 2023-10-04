@@ -1,8 +1,13 @@
 <div class="container">
     <h1>Workouts</h1>
+<<<<<<< HEAD
     <div class="card-columns" >
         <?php while($workout = $workouts->fetch_assoc()) { ?>
 <<<<<<< HEAD
+=======
+    <div class="container-fluid" >
+        <?php while($workout = $workouts->fetch_assoc()) { ?>
+>>>>>>> parent of 5f51174 (mega test)
         <div class="card">
                 <?php $workoutDeets = selectWorkoutDeets($workout['workoutid']);
                  while($workoutDeet = $workoutDeets->fetch_assoc()) { ?>
@@ -23,6 +28,7 @@
                     }
                     ?></p>
 <?php } ?>
+<<<<<<< HEAD
 =======
             <div class="col-sm-4">
                 <div class="card">
@@ -59,6 +65,10 @@
             </div>
 >>>>>>> parent of a405b39 (noooooo)
 =======
+            </div>
+>>>>>>> parent of 5f51174 (mega test)
+=======
+
             </div>
 >>>>>>> parent of 5f51174 (mega test)
         </div>
