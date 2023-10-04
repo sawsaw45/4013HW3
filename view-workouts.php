@@ -1,6 +1,6 @@
 
     <h1>Workouts</h1>
-    <div class="b-card-group" >
+    <div class="card-group" >
         <?php while($workout = $workouts->fetch_assoc()) { ?>
         <div class="card" style="width: 18rem; max-width: 284.6px;">
             <div class="card-body">
@@ -20,8 +20,8 @@
                     } else {
                         echo number_format($workoutDeet['weight']);
                     }?></p>
-            </div>
             <?php }?>
+            </div>
         </div>
 <?php }?>
     </div>
