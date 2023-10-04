@@ -19,8 +19,9 @@
                         echo "N/A";
                     } else {
                         echo number_format($workoutDeet['weight']);
+                    }
                     }?></p>
-            <?php }?>
+
             </div>
 <?php }?>
         </div>
