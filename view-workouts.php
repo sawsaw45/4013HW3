@@ -8,7 +8,7 @@
                 <h6 class="card-subtitle mb-2 text-muted"><?php echo $workout['date'] ?></h6>
                 <?php $workoutDeets = selectWorkoutDeets($workout['workoutid']);
                  while($workoutDeet = $workoutDeets->fetch_assoc()) { ?>
-                <p class="card-text">Reps:<?php echo $workoutDeet['repetitions']?>, Sets: <?php echo $workoutDeet['sets']?>, Weight: <?php echo number_format($workoutDeets['weight'])?></p>
+                <p class="card-text">Reps:<?php echo $workoutDeet['repetitions']?>, Sets: <?php echo $workoutDeet['sets']?>, Weight: <?php echo number_format($workoutDeet['weight'])?></p>
             </div>
             <?php } }?>
 
