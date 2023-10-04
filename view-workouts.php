@@ -3,7 +3,7 @@
     <div class="container" >
         <div class="row">
         <?php while($workout = $workouts->fetch_assoc()) { ?>
-            <div class="col-4">
+            <div class="col-sm-4">
                 <div class="card">
                     <?php $workoutDeets = selectWorkoutDeets($workout['workoutid']);
                     while($workoutDeet = $workoutDeets->fetch_assoc()) { ?>
