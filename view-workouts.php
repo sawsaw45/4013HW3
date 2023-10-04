@@ -25,11 +25,16 @@
                             ?></p>
                         <?php } ?>
 
+<<<<<<< HEAD
                     </div>
                 </div>
             </div>
 
 
+=======
+<?php } ?>
+            </div>
+>>>>>>> parent of a405b39 (noooooo)
         </div>
 
 <?php }?>
