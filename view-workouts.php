@@ -1,4 +1,4 @@
-
+<div class="container">
     <h1>Workouts</h1>
     <div class="card-group" >
         <?php while($workout = $workouts->fetch_assoc()) { ?>
@@ -27,3 +27,4 @@
         </div>
 <?php }?>
     </div>
+</div>
