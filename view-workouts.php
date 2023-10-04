@@ -12,6 +12,6 @@
             <?php }?>
             </div>
         </div>
-<?php }?>
     </div>
+<?php }?>
 </div>
