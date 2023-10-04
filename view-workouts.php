@@ -20,7 +20,7 @@
                     } else {
                         echo number_format($workoutDeet['weight']);
                     }
-                    }?></p>
+                    ?></p> <?php } ?>
 
             </div>
 <?php }?>
