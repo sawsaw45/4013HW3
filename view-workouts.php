@@ -2,7 +2,7 @@
     <h1>Workouts</h1>
     <div class="card-group" >
         <?php while($workout = $workouts->fetch_assoc()) { ?>
-        <div class="card" style="width: 18rem; max-height: min-content;">
+        <div class="card" style="width: 18rem; max-height:120px ;">
             <div class="card-body">
                  <h5 class="card-title"><?php echo $workout['username']?> <?php echo $workout['workoutname']?></h5>
                 <h6 class="card-subtitle mb-2 text-muted"><?php echo $workout['date'] ?></h6>
