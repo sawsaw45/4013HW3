@@ -3,9 +3,12 @@
 
 
             <?php while($workout = $workouts->fetch_assoc()) { ?>
-                    <div class="card-group">
                         <?php
-                        for ($x = 0; $x <= 4; $x++) { ?>
+                        $i = 0;
+                        foreach($workouts as $key => $workout) {
+                            if ($i % 3 == 0 ) {?>
+                    <div class="card-group">
+                                <?php } ?>
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title"><?php echo $workout['username']?> <?php echo $workout['workoutname']?></h5>
@@ -29,8 +32,13 @@
                                 <?php } ?>
                             </div>
                         </div>
-                        <?php } ?>
-                    </div>
+                        <?php
+                            if ($i % 3 == 2 ) {?>
+                             </div>
+    <?php } ?>
+                        <?php $i++; } ?>
+                <?php if($i % 3 < 2) {?>
+                    </div> <?php } ?>
             <?php } ?>
 
 </div>
