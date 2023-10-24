@@ -50,6 +50,7 @@
                         <label for="weight" class="form-label">Weight</label>
                         <input type="text" class="form-control" id="weight" name="weight">
                     </div>
+                    <input type="hidden" name="actionType" value="add">
                     <button type="submit" class="btn btn-primary">Save</button>
                 </form>
             </div>
