@@ -15,7 +15,7 @@ function selectUsers() {
 function InsertUser($firstname, $lastname, $username, $email, $DoB, $gender, $height, $weight) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `Users` (FirstName`, `LastName`, `Username`, `Email`, `DateOfBirth`, `Gender`, `Height`, `Weight`) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO `Users` (`FirstName`, `LastName`, `Username`, `Email`, `DateOfBirth`, `Gender`, `Height`, `Weight`) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("ssssssss", $firstname, $lastname, $username, $email, $DoB, $gender, $height, $weight);
         $success = $stmt->execute();
         $conn->close();
