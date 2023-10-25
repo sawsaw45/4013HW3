@@ -6,7 +6,7 @@
             $selText = " selected";
         }
         ?>
-        <option value="<?php echo $exerciseItem['exercise']; ?>"<?=$selText?>><?php echo $exerciseItem['ExerciseName']; ?></option>
+        <option value="<?php echo $exerciseItem['exercise']; ?>"<?=$selText?>><?php echo $exerciseItem['exercisename']; ?></option>
         <?php
     }
     ?>
