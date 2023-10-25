@@ -20,7 +20,7 @@
                 <form method="post" action="">
                     <div class="mb-3">
                         <label for="uid" class="form-label">User ID</label>
-                        <input type="text" class="form-control" id="uid" name="uid">
+                        <input type="text" class="form-control" id="uid" name="uid" value="<?php echo $user['UserID']?>">
                     </div>
                     <div class="mb-3">
                         <label for="workoutname" class="form-label">Workout Name</label>
