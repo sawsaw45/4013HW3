@@ -25,7 +25,7 @@
                     <div class="mb-3">
                         <label for="eid" class="form-label">Exercise ID</label>
                        <?php $exerciseList = selectExercisesForInput();
-                        $selectedExercise = $exercise['exerciseid'];
+                        $selectedExercise = 0;
                         include "view-exercise-input-list.php"; ?>
                     </div>
                     <div class="mb-3">
