@@ -19,7 +19,7 @@
             <div class="modal-body">
                 <form method="post" action="">
                     <div class="mb-3">
-                        <label for="firstName<?php echo $workout['workoutdetailid'];?>" class="form-label">WorkoutID</label>
+                        <label for="wid<?php echo $workout['workoutdetailid'];?>" class="form-label">WorkoutID</label>
                         <input class="form-control" type="text" id="wid<?php echo $workout['workoutdetailid'];?>" name="wid" value="<?php echo $workout['workoutid'];?>" readonly>
 
                     </div>
