@@ -18,6 +18,9 @@
                 <th>Date</th>
                 <th>Duration</th>
                 <th>Calories Burned</th>
+                <th></th>
+                <th></th>
+                <th></th>
             </tr>
             </thead>
             <tbody>
@@ -29,6 +32,7 @@
                     <td><?php echo $workout['date']; ?></td>
                     <td><?php echo $workout['duration']; ?></td>
                     <td><?php echo number_format($workout['caloriesburned']); ?></td>
+                    <td><?php include "view-workouts-by-user-editform.php"?></td>
                     <td>
                         <form method="post" action="details-by-workout.php?id=<?php echo $workout['workoutid'];?>">
                             <input type="hidden" name="cid" value="<?php echo $workout['workoutid']; ?>">

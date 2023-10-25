@@ -15,16 +15,16 @@ if (isset($_POST['actionType'])) {
             break;
         case "Delete":
             if (deleteWorkoutsByUser($_POST['id'])) {
-                echo "<div class='alert alert-success' role='alert'>User deleted successfully</div>";
+                echo "<div class='alert alert-success' role='alert'>Workout deleted successfully</div>";
             } else {
-                echo "<div class='alert alert-danger' role='alert'>Error deleting user</div>";
+                echo "<div class='alert alert-danger' role='alert'>Error deleting Workout</div>";
             }
             break;
-        case "edit":
-            if (updateWorkoutsByUser($_POST['firstName'], $_POST['lastName'], $_POST['username'], $_POST['email'],$_POST['dob'], $_POST['gender'], $_POST['height'], $_POST['weight'],$_POST['id'])) {
-                echo "<div class='alert alert-success' role='alert'>User Edited successfully</div>";
+        case "Edit":
+            if (updateWorkoutsByUser($_POST['uid'], $_POST['workoutname'], $_POST['date'], $_POST['duration'],$_POST['caloriesburned'], $_POST['id'])) {
+                echo "<div class='alert alert-success' role='alert'>Workout Edited successfully</div>";
             } else {
-                echo "<div class='alert alert-danger' role='alert'>Error Editing user</div>";
+                echo "<div class='alert alert-danger' role='alert'>Error Editing Workout</div>";
             }
             break;
     }
