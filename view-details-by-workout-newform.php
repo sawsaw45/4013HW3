@@ -40,7 +40,7 @@
                         <label for="weight" class="form-label">Weight</label>
                         <input type="text" class="form-control" id="weight" name="weight">
                     </div>
-                    <input type="hidden" name="cid" value="<?php echo $_POST['cid']; ?>" />
+
                     <input type="hidden" name="actionType" value="Add" />
 
                     <button type="submit" class="btn btn-primary">Save</button>
