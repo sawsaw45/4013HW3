@@ -38,8 +38,11 @@
                         <label for="CaloriesBurned" class="form-label">Calories Burned</label>
                         <input type="text" class="form-control" id="CaloriesBurned" name="CaloriesBurned">
                     </div>
-                    <input type="hidden" name="cid" value="<?php echo $user['UserID']; ?>">
+
                     <input type="hidden" name="actionType" value="add">
+                    <form method="post" action="workouts-by-user.php">
+                        <input type="hidden" name="cid" value="<?php echo $user['UserID']; ?>">
+
                     <button type="submit" class="btn btn-primary">Save</button>
                 </form>
             </div>
