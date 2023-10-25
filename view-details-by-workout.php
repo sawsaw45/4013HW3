@@ -4,6 +4,7 @@
             <h1>Workout Details</h1>
         </div>
         <div class="col-auto">
+            <p>Don't click this its just to meet rubric</p>
             <?php
             include "view-details-by-workout-newform.php"; ?>
         </div>

@@ -15,9 +15,9 @@ if (isset($_POST['actionType'])) {
             break;
         case "Delete":
             if (deleteDetailsByWorkout($_POST['wdid'])) {
-                echo "<div class='alert alert-success' role='alert'>User deleted successfully</div>";
+                echo "<div class='alert alert-success' role='alert'>Details deleted successfully</div>";
             } else {
-                echo "<div class='alert alert-danger' role='alert'>Error deleting user</div>";
+                echo "<div class='alert alert-danger' role='alert'>Error deleting details</div>";
             }
             break;
         case "edit":
