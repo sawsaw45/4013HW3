@@ -26,8 +26,8 @@
                 <tr class="border border-dark">
                     <td><?php echo $workout['workoutname']; ?></td>
                     <td><?php echo $workout['date']; ?></td>
-                    <td><?php echo $workout['Duration']; ?></td>
-                    <td><?php echo number_format($workout['CaloriesBurned']); ?></td>
+                    <td><?php echo $workout['duration']; ?></td>
+                    <td><?php echo number_format($workout['caloriesburned']); ?></td>
                     <td>
                         <form method="post" action="details-by-workout.php?id=<?php echo $workout['workoutid'];?>">
                             <input type="hidden" name="cid" value="<?php echo $workout['workoutid']; ?>">
