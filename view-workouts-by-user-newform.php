@@ -28,7 +28,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="date" class="form-label">Date</label>
-                        <input type="text" class="form-control" id="date" name="date">
+                        <input type="text" class="form-control" id="date" name="date" value="yyyy-mm-dd">
                     </div>
                     <div class="mb-3">
                         <label for="duration" class="form-label">Duration</label>
