@@ -39,11 +39,11 @@ function deleteWorkoutsByUser($wid) {
         throw $e;
     }
 }
-function updateWorkoutsByUser($wid, $uid, $workoutname, $date, $duration, $caloriesburned) {
+function updateWorkoutsByUser($uid, $workoutname, $date, $duration, $caloriesburned, $wid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `Workouts` set `UserID` = ?, `WorkoutName` = ?, `Date` = ?, `Duration` = ?, `CaloriesBurned` = ? where `WorkoutID` = ?");
-        $stmt->bind_param("issssi", $uid, $workoutname, $date, $duration, $caloriesburned, $wid);
+        $stmt->bind_param("isssdi", $uid, $workoutname, $date, $duration, $caloriesburned, $wid);
         $success =$stmt->execute();
         $conn->close();
         return $success;
