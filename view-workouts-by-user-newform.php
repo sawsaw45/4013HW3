@@ -23,7 +23,7 @@
                         <input type="text" class="form-control" id="UID" name="UID">
                     </div>
                     <div class="mb-3">
-                        <label for="WorkoutName"form-label">Workout Name</label>
+                        <label for="WorkoutName" class="form-label">Workout Name</label>
                         <input type="text" class="form-control" id="WorkoutName" name="WorkoutName">
                     </div>
                     <div class="mb-3">
@@ -40,8 +40,6 @@
                     </div>
 
                     <input type="hidden" name="actionType" value="add" />
-
-                        <input type="hidden" name="cid" value="UID" />
 
                     <button type="submit" class="btn btn-primary">Save</button>
                 </form>
