@@ -20,7 +20,7 @@
                 <form method="post" action="">
                     <div class="mb-3">
                         <label for="uid" class="form-label">User ID</label>
-                        <input type="text" class="form-control" id="uid" name="uid" value="<?php echo $user['UserID']?>">
+                        <input type="text" class="form-control" id="uid" name="uid">
                     </div>
                     <div class="mb-3">
                         <label for="workoutname" class="form-label">Workout Name</label>
@@ -39,7 +39,7 @@
                         <input type="text" class="form-control" id="caloriesburned" name="caloriesburned">
                     </div>
                     <input type="hidden" name="cid" value="<?php echo $_POST['cid']; ?>" />
-                    <input type="hidden" name="actionType" value="add" />
+                    <input type="hidden" name="actionType" value="Add" />
 
                     <button type="submit" class="btn btn-primary">Save</button>
                 </form>
