@@ -2,7 +2,7 @@
     <?php
     while ($exerciseItem = $exerciseList->fetch_assoc()) {
         $selText = "";
-        if ($selectedExercise == $exercisetem['exerciseid']) {
+        if ($selectedExercise == $exerciseItem['exerciseid']) {
             $selText = " selected";
         }
         ?>
