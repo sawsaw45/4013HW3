@@ -3,7 +3,6 @@ function selectWorkoutsByUser($wid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT workoutid, username, workoutname, date, duration ,caloriesburned FROM Workouts w join Users u on w.UserID = u.UserID WHERE u.userid=?; ");
-
         $stmt->bind_param("i", $wid);
         $stmt->execute();
         $result = $stmt->get_result();
@@ -18,7 +17,7 @@ function insertWorkoutsByUser($uid, $workoutname, $date, $duration, $caloriesbur
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `Workouts` (`UserID`, `WorkoutName`, `Date`, `Duration`, `CaloriesBurned`) VALUES (?, ?, ?, ?, ?) ");
-        $stmt->bind_param("sssss", $uid, $workoutname, $date, $duration, $caloriesburned);
+        $stmt->bind_param("issid", $uid, $workoutname, $date, $duration, $caloriesburned);
         $success =$stmt->execute();
         $conn->close();
         return $success;
