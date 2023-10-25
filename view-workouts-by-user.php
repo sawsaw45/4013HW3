@@ -4,7 +4,7 @@
             <h1>Workouts by User</h1>
         </div>
         <div class="col-auto">
-            <?php $user = selectUser($_POST['cid']); ?>
+            <?php $user = $_POST['cid']; ?>
             <?php include "view-workouts-by-user-newform.php"; ?>
         </div>
     </div>
