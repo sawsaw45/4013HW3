@@ -41,7 +41,7 @@
                     </td>
                     <td>
                         <form method="post" action="">
-                            <input type="hidden" name="id" value="<?php echo $workout['workoutid']; ?>">
+                            <input type="hidden" name="wdid" value="<?php echo $workout['workoutdetailid']; ?>">
                             <input type="hidden" name="actionType" value="Delete">
                             <input type="hidden" name="cid" value="<?php echo $_POST['cid']; ?>" />
                             <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?');">
