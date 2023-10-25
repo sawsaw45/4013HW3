@@ -9,7 +9,7 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="editWorkoutModal<?php echo $workout['workoutid'];?>" tabindex="-1" aria-labelledby="editUserModalLabel<?php echo $workout['workoutid'];?>" aria-hidden="true">
+<div class="modal fade" id="editWorkoutModal<?php echo $workout['workoutid'];?>" tabindex="-1" aria-labelledby="editWorkoutModalLabel<?php echo $workout['workoutid'];?>" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
