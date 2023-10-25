@@ -50,7 +50,7 @@
                         <label for="weight<?php echo $user['UserID'];?>" class="form-label">Weight</label>
                         <input type="text" class="form-control" id="weight<?php echo $user['UserID'];?>" name="weight" value="<?php echo $user['Weight'];?>">
                     </div>
-                    <input type="hidden" name="id" value="<?php echo $user['UserID']; ?>
+                    <input type="hidden" name="id" value="<?php echo $user['UserID']; ?>" </input>
                     <input type="hidden" name="actionType" value="edit">
                     <button type="submit" class="btn btn-primary">Save</button>
                 </form>
