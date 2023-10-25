@@ -6,9 +6,9 @@ include "view-header.php";
 $workouts = selectDetailsByWorkout($_GET['id']);
 if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
-        case "add":
+        case "Add":
             if (insertDetailsByWorkout($_POST['wid'], $_POST['eid'], $_POST['sets'], $_POST['reps'],$_POST['weight'])) {
-                echo "<div class='alert alert-success' role='alert'>Workout detaili added successfully</div>";
+                echo "<div class='alert alert-success' role='alert'>Workout detail added successfully</div>";
             } else {
                 echo "<div class='alert alert-danger' role='alert'>Error adding Workout Detail</div>";
             }
