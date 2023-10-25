@@ -21,23 +21,23 @@
                     <div class="mb-3">
                         <label for="firstName<?php echo $workout['workoutdetailid'];?>" class="form-label">WorkoutID</label>
                         <input class="form-control" type="text" id="wid<?php echo $workout['workoutdetailid'];?>" name="wid" value="<?php echo $workout['workoutid'];?>" readonly>
-                        <input type="text" class="form-control" id="firstName<?php echo $workout['workoutdetailid'];?>" name="uid" value="<?php echo $_POST['cid'];?>">
+
                     </div>
                     <div class="mb-3">
                         <label for="lastName<?php echo $workout['workoutdetailid'];?>" class="form-label">Workout Name</label>
                         <input type="text" class="form-control" id="lastName<?php echo $workout['workoutdetailid'];?>" name="workoutname" value="<?php echo $workout['workoutname'];?>">
                     </div>
                     <div class="mb-3">
-                        <label for="username<?php echo $workout['workoutdetailid'];?>" class="form-label">Date</label>
-                        <input type="text" class="form-control" id="username<?php echo $workout['workoutdetailid'];?>" name="date" value="<?php echo $workout['date'];?>">
+                        <label for="username<?php echo $workout['workoutdetailid'];?>" class="form-label">Sets</label>
+                        <input type="text" class="form-control" id="username<?php echo $workout['workoutdetailid'];?>" name="sets" value="<?php echo $workout['sets'];?>">
                     </div>
                     <div class="mb-3">
-                        <label for="email<?php echo $workout['workoutdetailid'];?>" class="form-label">Duration</label>
-                        <input type="text" class="form-control" id="email<?php echo $workout['workoutdetailid'];?>" name="duration" value="<?php echo $workout['duration'];?>">
+                        <label for="email<?php echo $workout['workoutdetailid'];?>" class="form-label">Reps</label>
+                        <input type="text" class="form-control" id="email<?php echo $workout['workoutdetailid'];?>" name="reps" value="<?php echo $workout['repetitions'];?>">
                     </div>
                     <div class="mb-3">
-                        <label for="dob<?php echo $workout['workoutdetailid'];?>" class="form-label">Calories Burned</label>
-                        <input type="text" class="form-control" id="dob<?php echo $workout['workoutdetailid'];?>" name="caloriesburned" value="<?php echo $workout['caloriesburned'];?>">
+                        <label for="dob<?php echo $workout['workoutdetailid'];?>" class="form-label">Weight</label>
+                        <input type="text" class="form-control" id="dob<?php echo $workout['workoutdetailid'];?>" name="weight" value="<?php echo $workout['weight'];?>">
                     </div>
 
                     <input type="hidden" name="id" value="<?php echo $workout['workoutdetailid']; ?>" />
