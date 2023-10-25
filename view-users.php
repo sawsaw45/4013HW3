@@ -28,7 +28,7 @@
         <td><?php echo $user['Username']; ?></td>
             <td><?php include "view-users-editform.php";?></td>
         <td>
-            <form method="post" action="workouts-by-user.php">
+            <form method="post" action="workouts-by-user.php?=<?php echo $user['UserID'];?>">
             <input type="hidden" name="cid" value="<?php echo $user['UserID']; ?>">
             <button type="submit" class="btn btn-primary">Workouts</button>
             </form>
