@@ -31,7 +31,7 @@ function deleteDetailsByWorkout($id) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("DELETE FROM `WorkoutDetails` WHERE `WorkoutDetailID` = ?");
-        $stmt->bind_param("iiiid", $wid , $eid, $sets, $reps, $weight);
+        $stmt->bind_param("i", $id);
         $success = $stmt->execute();
         $conn->close();
         return $success;
