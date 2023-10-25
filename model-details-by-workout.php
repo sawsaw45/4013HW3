@@ -27,6 +27,19 @@ function insertDetailsByWorkout($wid, $eid, $sets, $reps, $weight) {
         throw $e;
     }
 }
+function deleteDetailsByWorkout($id) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("DELETE FROM `WorkoutDetails` WHERE `WorkoutDetailID` = ?");
+        $stmt->bind_param("iiiid", $wid , $eid, $sets, $reps, $weight);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 function selectExercisesForInput() {
     try {
         $conn = get_db_connection();
