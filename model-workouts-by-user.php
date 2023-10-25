@@ -14,11 +14,11 @@ function selectWorkoutsByUser($wid) {
         throw $e;
     }
 }
-function insertWorkoutsByUser($UID, $WorkoutName, $Date, $Duration, $CaloriesBurned) {
+function insertWorkoutsByUser($uid, $workoutname, $date, $duration, $caloriesburned) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `Workouts` (`UserID`, `WorkoutName`, `Date`, `Duration`, `CaloriesBurned`) VALUES (?, ?, ?, ?, ?) ");
-        $stmt->bind_param("sssss", $UID, $WorkoutName, $Date, $Duration, $CaloriesBurned);
+        $stmt->bind_param("sssss", $uid, $workoutname, $date, $duration, $caloriesburned);
         $success =$stmt->execute();
         $conn->close();
         return $success;

@@ -7,7 +7,7 @@ $workouts = selectWorkoutsByUser($_POST['cid']);
 if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
         case "add":
-            if (insertWorkoutsByUser($_POST['UID'], $_POST['WorkoutName'], $_POST['Date'], $_POST['Duration'], $_POST['CaloriesBurned'])) {
+            if (insertWorkoutsByUser($_POST['uid'], $_POST['workoutname'], $_POST['date'], $_POST['duration'], $_POST['caloriesburned'])) {
                 echo "<div class='alert alert-success' role='alert'>Workout added successfully</div>";
             } else {
                 echo "<div class='alert alert-danger' role='alert'>Error adding Workout</div>";

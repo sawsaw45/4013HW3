@@ -13,30 +13,30 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="newUserWorkoutModalLabel">Add User</h1>
+                <h1 class="modal-title fs-5" id="newUserWorkoutModalLabel">Add Workout</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form method="post" action="">
                     <div class="mb-3">
-                        <label for="UID" class="form-label">User ID</label>
-                        <input type="text" class="form-control" id="UID" name="UID">
+                        <label for="uid" class="form-label">User ID</label>
+                        <input type="text" class="form-control" id="uid" name="uid">
                     </div>
                     <div class="mb-3">
-                        <label for="WorkoutName" class="form-label">Workout Name</label>
-                        <input type="text" class="form-control" id="WorkoutName" name="WorkoutName">
+                        <label for="workoutname" class="form-label">Workout Name</label>
+                        <input type="text" class="form-control" id="workoutname" name="workoutname">
                     </div>
                     <div class="mb-3">
-                        <label for="Date" class="form-label">Date</label>
-                        <input type="text" class="form-control" id="Date" name="Date">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="text" class="form-control" id="date" name="date">
                     </div>
                     <div class="mb-3">
-                        <label for="Duration" class="form-label">Duration</label>
-                        <input type="text" class="form-control" id="Duration" name="Duration">
+                        <label for="duration" class="form-label">Duration</label>
+                        <input type="text" class="form-control" id="duration" name="duration">
                     </div>
                     <div class="mb-3">
-                        <label for="CaloriesBurned" class="form-label">Calories Burned</label>
-                        <input type="text" class="form-control" id="CaloriesBurned" name="CaloriesBurned">
+                        <label for="caloriesburned" class="form-label">Calories Burned</label>
+                        <input type="text" class="form-control" id="caloriesburned" name="caloriesburned">
                     </div>
 
                     <input type="hidden" name="actionType" value="add" />
