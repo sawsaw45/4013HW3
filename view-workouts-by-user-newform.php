@@ -38,7 +38,7 @@
                         <label for="caloriesburned" class="form-label">Calories Burned</label>
                         <input type="text" class="form-control" id="caloriesburned" name="caloriesburned">
                     </div>
-
+                    <input type="hidden" name="cid" value="<?php echo $_POST['cid']; ?>" />
                     <input type="hidden" name="actionType" value="add" />
 
                     <button type="submit" class="btn btn-primary">Save</button>
