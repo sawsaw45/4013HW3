@@ -17,7 +17,7 @@ function selectWorkoutsByUser($wid) {
 function insertWorkoutsByUser($UID, $WorkoutName, $Date, $Duration, $CaloriesBurned) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `Workouts` (`UserID`, `WorkoutName`, `Date`, `Duration`, `CaloriesBurned`) VALUES ( ?, ?, ?, ?, ?)");
+        $stmt = $conn->prepare("INSERT INTO `Workouts` (`UserID`, `WorkoutName`, `Date`, `Duration`, `CaloriesBurned`) VALUES (?, ?, ?, ?, ?) ");
         $stmt->bind_param("sssss", $UID, $WorkoutName, $Date, $Duration, $CaloriesBurned);
         $success =$stmt->execute();
         $conn->close();
