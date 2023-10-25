@@ -18,6 +18,14 @@ if (isset($_POST['actionType'])) {
             } else {
                 echo "<div class='alert alert-danger' role='alert'>Error deleting user</div>";
             }
+            break;
+        case "edit":
+            if (updateUser($_POST['firstName'], $_POST['lastName'], $_POST['username'], $_POST['email'],$_POST['dob'], $_POST['gender'], $_POST['height'], $_POST['weight'],$_POST['id'])) {
+                echo "<div class='alert alert-success' role='alert'>User Edited successfully</div>";
+            } else {
+                echo "<div class='alert alert-danger' role='alert'>Error Editing user</div>";
+            }
+            break;
     }
 }
 $users = selectUsers();

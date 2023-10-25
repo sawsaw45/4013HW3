@@ -2,7 +2,7 @@
 function selectUsers() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT UserID, firstname, lastname,Username, email, dateofbirth, gender, height, weight FROM `Users`");
+        $stmt = $conn->prepare("SELECT UserID, FirstName, LastName, Username, Email, DateOfBirth, Gender, Height, Weight FROM `Users`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
@@ -38,7 +38,7 @@ function deleteUser($id) {
         throw $e;
     }
 }
-function updateUser() {
+function updateUser($firstname, $lastname, $username, $email, $DoB, $gender, $height, $weight, $id  ) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("update `Users` set `FirstName` = ?, `LastName` = ?, `Username` = ?, `Email` = ?, `DateOfBirth` = ?, `Gender` = ?, `Height` = ?, `Weight` = ? where `UserID` = ?");

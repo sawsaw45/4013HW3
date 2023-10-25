@@ -32,7 +32,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="email<?php echo $user['UserID'];?>" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="email<?php echo $user['UserID'];?>" name="email" value="<?php echo $user['email'];?>">
+                        <input type="text" class="form-control" id="email<?php echo $user['UserID'];?>" name="email" value="<?php echo $user['Email'];?>">
                     </div>
                     <div class="mb-3">
                         <label for="dob<?php echo $user['UserID'];?>" class="form-label">Date of Birth</label>
@@ -48,7 +48,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="weight<?php echo $user['UserID'];?>" class="form-label">Weight</label>
-                        <input type="text" class="form-control" id="weight<?php echo $user['UserID'];?>" name="weight" value="<?php echo $user['weight'];?>">
+                        <input type="text" class="form-control" id="weight<?php echo $user['UserID'];?>" name="weight" value="<?php echo $user['Weight'];?>">
                     </div>
                     <input type="hidden" name="actionType" value="edit">
                     <button type="submit" class="btn btn-primary">Save</button>
