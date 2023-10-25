@@ -48,8 +48,8 @@
                         {
                             echo "N/A";
                         } ?></td>
-                    <td><?php include "view-details-by-workout-editform.php";?></td>
                     <td><?php echo $workout['duration']; ?></td>
+                    <td><?php include "view-details-by-workout-editform.php";?></td>
                     <td>
                         <form method="post" action="">
                             <input type="hidden" name="wdid" value="<?php echo $workout['workoutdetailid']; ?>">
