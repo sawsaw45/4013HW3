@@ -1,4 +1,12 @@
 <div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Workout Details</h1>
+        </div>
+        <div class="col-auto">
+            <?php include "view-details-by-workout-newform.php"; ?>
+        </div>
+    </div>
     <?php while($workout = $workouts->fetch_assoc()) { ?>
     <h1><?php echo $workout['username']?> <?php echo $workout['workoutname']?> </h1>
 
