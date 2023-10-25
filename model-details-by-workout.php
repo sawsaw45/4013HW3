@@ -26,6 +26,19 @@ function insertDetailsByWorkout($wid, $eid, $sets, $reps, $weight) {
         throw $e;
     }
 }
+function updateDetailsByWorkout($wid, $eid, $sets, $reps, $weight, $wdid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("UPDATE `WorkoutDetails` SET `WorkoutID` = ?, `ExerciseID` = ?, `Sets` = ?, `Repetitions` = ?, `Weight` = ? WHERE `WorkoutDetailID` = ?");
+        $stmt->bind_param("iiiidi", $wid , $eid, $sets, $reps, $weight, $wdid);
+        $success = $stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 function deleteDetailsByWorkout($id) {
     try {
         $conn = get_db_connection();

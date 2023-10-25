@@ -40,7 +40,7 @@
                         <input type="text" class="form-control" id="dob<?php echo $workout['workoutdetailid'];?>" name="weight" value="<?php echo $workout['weight'];?>">
                     </div>
 
-                    <input type="hidden" name="id" value="<?php echo $workout['workoutdetailid']; ?>" />
+                    <input type="hidden" name="wdid" value="<?php echo $workout['workoutdetailid']; ?>" />
                     <input type="hidden" name="actionType" value="Edit"/>
                     <button type="submit" class="btn btn-primary">Save</button>
                 </form>

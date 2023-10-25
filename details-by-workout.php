@@ -20,8 +20,8 @@ if (isset($_POST['actionType'])) {
                 echo "<div class='alert alert-danger' role='alert'>Error deleting details</div>";
             }
             break;
-        case "edit":
-            if (updateDetailsByWorkout($_POST['firstName'], $_POST['lastName'], $_POST['username'], $_POST['email'],$_POST['dob'], $_POST['gender'], $_POST['height'], $_POST['weight'],$_POST['id'])) {
+        case "Edit":
+            if (updateDetailsByWorkout($_POST['wid'], $_POST['workoutname'], $_POST['sets'], $_POST['reps'],$_POST['weight'], $_POST['wdid'])) {
                 echo "<div class='alert alert-success' role='alert'>User Edited successfully</div>";
             } else {
                 echo "<div class='alert alert-danger' role='alert'>Error Editing user</div>";
