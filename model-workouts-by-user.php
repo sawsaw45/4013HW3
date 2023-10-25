@@ -2,7 +2,7 @@
 function selectWorkoutsByUser($wid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT workoutid, username, workoutname, date, Duration ,CaloriesBurned FROM Workouts w join Users u on w.UserID = u.UserID WHERE u.userid=?; ");
+        $stmt = $conn->prepare("SELECT workoutid, username, workoutname, date, duration ,caloriesburned FROM Workouts w join Users u on w.UserID = u.UserID WHERE u.userid=?; ");
 
         $stmt->bind_param("i", $wid);
         $stmt->execute();

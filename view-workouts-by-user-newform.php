@@ -19,23 +19,23 @@
             <div class="modal-body">
                 <form method="post" action="">
                     <div class="mb-3">
-                        <label for="firstName" class="form-label">User ID</label>
+                        <label for="UID" class="form-label">User ID</label>
                         <input type="text" class="form-control" id="UID" name="UID">
                     </div>
                     <div class="mb-3">
-                        <label for="lastName" class="form-label">Workout Name</label>
+                        <label for="WorkoutName"form-label">Workout Name</label>
                         <input type="text" class="form-control" id="WorkoutName" name="WorkoutName">
                     </div>
                     <div class="mb-3">
-                        <label for="username" class="form-label">Date</label>
+                        <label for="Date" class="form-label">Date</label>
                         <input type="text" class="form-control" id="Date" name="Date">
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Duration</label>
+                        <label for="Duration" class="form-label">Duration</label>
                         <input type="text" class="form-control" id="Duration" name="Duration">
                     </div>
                     <div class="mb-3">
-                        <label for="dob" class="form-label">Calories Burned</label>
+                        <label for="CaloriesBurned" class="form-label">Calories Burned</label>
                         <input type="text" class="form-control" id="CaloriesBurned" name="CaloriesBurned">
                     </div>
                     <input type="hidden" name="actionType" value="add">
