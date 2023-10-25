@@ -4,7 +4,9 @@
             <h1>Workout Details</h1>
         </div>
         <div class="col-auto">
-            <?php include "view-details-by-workout-newform.php"; ?>
+            <?php
+            echo $_POST['cid'];
+            include "view-details-by-workout-newform.php"; ?>
         </div>
     </div>
     <?php while($workout = $workouts->fetch_assoc()) { ?>
