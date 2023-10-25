@@ -20,7 +20,6 @@
                 <form method="post" action="">
                     <div class="mb-3">
                         <label for="firstName<?php echo $workout['workoutid'];?>" class="form-label">UserID</label>
-                        <input type="text" class="form-control" id="firstName<?php echo $workout['workoutid'];?>" name="uid" value="<?php echo $_POST['cid'];?>">
                         <input class="form-control" type="text" id="firstName<?php echo $workout['workoutid'];?>" name="uid" value="<?php echo $_POST['cid'];?>" readonly>
 
                     </div>
