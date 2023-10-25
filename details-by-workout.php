@@ -3,7 +3,7 @@ require_once("util-db.php");
 require_once("model-details-by-workout.php");
 $pageTitle = "Details by Workout";
 include "view-header.php";
-$workouts = selectDetailsByWorkout($_GET['id']);
+$workouts = selectDetailsByWorkout($_GET['cid']);
 if (isset($_POST['actionType'])) {
     switch ($_POST['actionType']) {
         case "Add":
