@@ -12,6 +12,12 @@ if (isset($_POST['actionType'])) {
                 echo "<div class='alert alert-danger' role='alert'>Error adding user</div>";
             }
             break;
+        case "delete":
+            if (deleteUser($_POST['id'])) {
+                echo "<div class='alert alert-success' role='alert'>User deleted successfully</div>";
+            } else {
+                echo "<div class='alert alert-danger' role='alert'>Error deleting user</div>";
+            }
     }
 }
 $users = selectUsers();
