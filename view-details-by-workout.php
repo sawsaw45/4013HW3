@@ -48,6 +48,7 @@
                         {
                             echo "N/A";
                         } ?></td>
+                    <?php include "view-details-by-workout-editform.php";?>
                     <td><?php echo $workout['duration']; ?></td>
                     <td>
                         <form method="post" action="">
