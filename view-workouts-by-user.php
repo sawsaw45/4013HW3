@@ -1,5 +1,13 @@
 <div class="container">
-    <h1>Workouts by User
+    <div class="row">
+        <div class="col">
+            <h1>Workouts by User</h1>
+        </div>
+        <div class="col-auto">
+            <?php include "view-workouts-by-user-newform.php"; ?>
+        </div>
+    </div>
+
     </h1>
     <div class="table-responsive">
         <table class="table">

@@ -14,4 +14,43 @@ function selectWorkoutsByUser($wid) {
         throw $e;
     }
 }
+function insertWorkoutsByUser($uid, $workoutname, $date, $duration, $caloriesburned) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("INSERT INTO `Workouts` (`UserID`, `WorkoutName`, `Date`, `Duration`, `CaloriesBurned`) VALUES ( ?, ?, ?, ?, ?)");
+        $stmt->bind_param("sssss", $uid, $workoutname, $date, $duration, $caloriesburned);
+        $success =$stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+function deleteWorkoutsByUser($wid) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("delete from `Workouts` where `WorkoutID` = ?");
+        $stmt->bind_param("s", $wid);
+        $success =$stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+function updateWorkoutsByUser($wid, $uid, $workoutname, $date, $duration, $caloriesburned) {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("update `Workouts` set `UserID` = ?, `WorkoutName` = ?, `Date` = ?, `Duration` = ?, `CaloriesBurned` = ? where `WorkoutID` = ?");
+        $stmt->bind_param("ssssss", $uid, $workoutname, $date, $duration, $caloriesburned, $wid);
+        $success =$stmt->execute();
+        $conn->close();
+        return $success;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
