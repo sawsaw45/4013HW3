@@ -5,7 +5,6 @@
         </div>
         <div class="col-auto">
             <?php
-            echo $_POST['cid'];
             include "view-details-by-workout-newform.php"; ?>
         </div>
     </div>
