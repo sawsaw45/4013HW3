@@ -13,7 +13,7 @@ if (isset($_POST['actionType'])) {
                 echo "<div class='alert alert-danger' role='alert'>Error adding Workout</div>";
             }
             break;
-        case "delete":
+        case "Delete":
             if (deleteWorkoutsByUser($_POST['id'])) {
                 echo "<div class='alert alert-success' role='alert'>User deleted successfully</div>";
             } else {
