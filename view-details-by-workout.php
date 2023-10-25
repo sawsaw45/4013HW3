@@ -4,7 +4,7 @@
             <h1>Workout Details</h1>
         </div>
         <div class="col-auto">
-            <p>Don't click this its just to meet rubric</p>
+            <p class="text-danger">Don't click this it's just to meet rubric. This should only have one record per workout.</p>
             <?php
             include "view-details-by-workout-newform.php"; ?>
         </div>
