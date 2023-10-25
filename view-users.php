@@ -26,6 +26,13 @@
         <tr class="border border-dark">
         <td><?php echo $user['UserID']; ?></td>
         <td><?php echo $user['Username']; ?></td>
+            <td><?php include "view-users-editform.php";?></td>
+        <td>
+            <form method="post" action="workouts-by-user.php">
+            <input type="hidden" name="cid" value="<?php echo $user['UserID']; ?>">
+            <button type="submit" class="btn btn-primary">Workouts</button>
+            </form>
+        </td>
             <td>
                 <form method="post" action="">
                     <input type="hidden" name="id" value="<?php echo $user['UserID']; ?>">
@@ -38,13 +45,6 @@
                     </button>
                 </form>
             </td>
-            <td><?php include "view-users-editform.php";?></td>
-        <td>
-            <form method="post" action="workouts-by-user.php">
-            <input type="hidden" name="cid" value="<?php echo $user['UserID']; ?>">
-            <button type="submit" class="btn btn-primary">Workouts</button>
-            </form>
-        </td>
 
   </tr>
 <?php
