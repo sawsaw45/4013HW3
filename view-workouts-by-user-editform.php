@@ -40,6 +40,7 @@
                     </div>
 
                     <input type="hidden" name="id" value="<?php echo $workout['workoutid']; ?>" />
+                    <input type="hidden" name="cid" value="<?php echo $_POST['cid']; ?>" />
                     <input type="hidden" name="actionType" value="Edit"/>
                     <button type="submit" class="btn btn-primary">Save</button>
                 </form>
