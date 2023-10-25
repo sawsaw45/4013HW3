@@ -1,4 +1,4 @@
-<select class="form-select" id="iid" name="iid">
+<select class="form-select" id="eid" name="eid">
     <?php
     while ($exerciseItem = $exerciseList->fetch_assoc()) {
         $selText = "";

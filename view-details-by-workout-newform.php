@@ -34,7 +34,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="reps" class="form-label">Reps</label>
-                        <input type="text" class="form-control" id="reps name="reps>
+                        <input type="text" class="form-control" id="reps" name="reps>
                     </div>
                     <div class="mb-3">
                         <label for="weight" class="form-label">Weight</label>
