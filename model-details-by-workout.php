@@ -29,4 +29,17 @@ function insertDetailsByWorkout($wid, $eid, $sets, $reps, $weight) {
         throw $e;
     }
 }
+function selectExercisesForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT exerciseid, exercisename FROM `Exercises` order by exerciseid asc");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
