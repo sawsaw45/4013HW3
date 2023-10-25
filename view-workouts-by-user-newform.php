@@ -40,7 +40,7 @@
                     </div>
 
                     <input type="hidden" name="actionType" value="add" />
-                    <input type="hidden" name="cid" value="<?php echo $_POST['cid']; ?>" />
+
                     <button type="submit" class="btn btn-primary">Save</button>
                 </form>
             </div>
