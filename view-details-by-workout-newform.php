@@ -20,7 +20,7 @@
                 <form method="post" action="">
                     <div class="mb-3">
                         <label for="wid" class="form-label">Workout ID</label>
-                        <input type="text" class="form-control" id="wid" name="wid">
+                        <input type="text" class="form-control" id="wid" name="wid" value="<?php echo $_POST['cid'];?>">
                     </div>
                     <div class="mb-3">
                         <label for="eid" class="form-label">Exercise</label>
