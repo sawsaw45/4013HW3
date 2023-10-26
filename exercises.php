@@ -19,7 +19,7 @@ if (isset($_POST['actionType'])) {
                 echo "<div class='alert alert-danger' role='alert'>Error deleting exercise</div>";
             }
             break;
-        case "Update":
+        case "Edit":
             if ($success = updateExercise($_POST['exercisename'], $_POST['description'], $_POST['musclegroup'], $_POST['equipmentrequired'], $_POST['id'])) {
                 echo "<div class='alert alert-success' role='alert'>Exercise updated successfully</div>";
             } else {
