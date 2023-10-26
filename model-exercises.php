@@ -2,7 +2,7 @@
 function selectExercises() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("Select exercisename, description, musclegroup, equipmentrequired from Exercises; ");
+        $stmt = $conn->prepare("Select exerciseid, exercisename, description, musclegroup, equipmentrequired from Exercises; ");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
