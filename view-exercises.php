@@ -1,5 +1,5 @@
 <div class="container">
-    <<div class="row">
+    <div class="row">
         <div class="col">
             <h1>Exercises</h1>
         </div>
@@ -7,8 +7,6 @@
             <?php include "view-exercises-newform.php"; ?>
         </div>
     </div>
-    <h1>Exercises
-    </h1>
     <div class="table-responsive">
         <table class="table">
             <thead class="border border-danger rounded">
@@ -30,6 +28,7 @@
                     <td><?php echo $exercise['description']; ?></td>
                     <td><?php echo $exercise['musclegroup']; ?></td>
                     <td><?php echo $exercise['equipmentrequired']; ?></td>
+                    <td><?php include "view-exercises-editform.php";?></td>
                     <td>
                         <form method="post" action="">
                             <input type="hidden" name="id" value="<?php echo $exercise['exerciseid']; ?>">
